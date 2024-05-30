@@ -12,7 +12,7 @@ body{
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 20%;
+    top: 7%;
     color: white;
     font-weight: bold;
     font-size: 48px;
@@ -23,13 +23,11 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .carte{
     width: 90%;
     max-width: 400px;
-    height: 80%;
-    margin: auto;
+    height: 60%;
     display: flex;
     flex-direction: column;
     justify-content: center;

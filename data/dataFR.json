@@ -164,7 +164,7 @@
   {
     "country": "burundi",
     "capital": [
-      "bujumbura"
+      "Gitega", "bujumbura"
     ]
   },
   {
@@ -188,7 +188,7 @@
   {
     "country": "cap-vert",
     "capital": [
-      "plage"
+      "praia"
     ]
   },
   {
@@ -234,7 +234,7 @@
     ]
   },
   {
-    "country": "république du congo (congo-brazzaville)",
+    "country": "république du congo",
     "capital": [
       "brazzaville"
     ]
@@ -529,7 +529,7 @@
   {
     "country": "kiribati",
     "capital": [
-      "atoll de tarawa"
+      "atoll de tarawa", "Tarawa-Sud"
     ]
   },
   {
@@ -553,7 +553,7 @@
   {
     "country": "koweït",
     "capital": [
-      "ville du Koweït"
+      "ville du Koweït", "Koweit"
     ]
   },
   {
@@ -625,7 +625,7 @@
   {
     "country": "madagascar",
     "capital": [
-      "antananarivo"
+      "antananarivo", "tananarive"
     ]
   },
   {
@@ -751,7 +751,7 @@
   {
     "country": "Pays-Bas",
     "capital": [
-      "amsterdam, la Haye"
+      "amsterdam"
     ]
   },
   {
@@ -1039,7 +1039,7 @@
   {
     "country": "tanzanie",
     "capital": [
-      "dar es salaam, dodoma"
+      "dar es salaam", "dodoma"
     ]
   },
   {

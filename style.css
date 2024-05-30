@@ -60,6 +60,7 @@ body{
 
 input{
     width: 100%;
+    min-width: 400px;
     padding: 10px;
     font-size: 24px;
     background: #1e042e9c;

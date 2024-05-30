@@ -1,5 +1,8 @@
 document.getElementById("input").focus();
 
+var [actual_JSON,currentElement] = [null , null];
+let score = 0; 
+
 function loadJSON(callback) {   
 
     var xobj = new XMLHttpRequest();
@@ -13,7 +16,6 @@ function loadJSON(callback) {
     };
     xobj.send(null);  
  }
- var [actual_JSON,currentElement] = [null , null];
 
  loadJSON(function(response) {
     // Parse JSON string into object
@@ -71,7 +73,7 @@ function changeWord(div){
     console.log(currentElement.capital);
 }
 
-let score = 0; 
+
 
 function increaseScore() {
 
@@ -84,3 +86,4 @@ function showSuccessMessage() {
     document.getElementById("word").textContent = "Félicitations ! Vous avez deviné toutes les capitales.";
     document.getElementById("input").style.display = "none"; 
 }
+

@@ -2,8 +2,10 @@ body{
     margin: 0;
     padding: 0;
     height: 100%;
-    background: rgb(37,143,203);
-    background: linear-gradient(#FF6BCD,#67C8FF); 
+    background: #fffcdc;
+    /* background: linear-gradient(#d9a7c7,#fffcdc);  */
+    /* background: linear-gradient(#ffafbcc9,#ffc3a0cb);  */
+    background: linear-gradient(#43c6ac,#f8ffae); 
 } 
 
 #score{
@@ -63,7 +65,7 @@ input{
     width: 100%;
     padding: 10px;
     font-size: 24px;
-    background: #1e042e9c;
+    background: #003140;
     color: white;
     font-weight: bold;
     border-color: white;

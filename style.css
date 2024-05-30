@@ -6,13 +6,13 @@ body{
     background: linear-gradient(#FF6BCD,#67C8FF); 
 } 
 
-.score{
+#score{
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     width: 100%;
-    top: 1%;
+    top: 20%;
     color: white;
     font-weight: bold;
     font-size: 48px;
@@ -26,7 +26,8 @@ body{
     align-items: center;
 }
 .carte{
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     height: 80%;
     margin: auto;
     display: flex;
@@ -39,7 +40,8 @@ body{
     padding: 20px; */
 }
 .word-holder{
-    width: 400px;
+    width: 100%;
+    min-height: 50px;
     background: #1E042E ;
     padding: 20px 0;
     display: flex;
@@ -57,7 +59,7 @@ body{
 }
 
 input{
-    width: 400px;
+    width: 100%;
     padding: 10px;
     font-size: 24px;
     background: #1e042e9c;

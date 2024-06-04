@@ -3,26 +3,30 @@ document.getElementById("input").focus();
 var [actual_JSON,currentElement] = [null , null];
 let score = 0; 
 
-function loadJSON(callback) {   
-
-    var xobj = new XMLHttpRequest();
-        xobj.overrideMimeType("application/json");
-    xobj.open('GET', 'data/dataFR.json', true); // Replace 'my_data' with the path to your file
-    xobj.onreadystatechange = function () {
-          if (xobj.readyState == 4 && xobj.status == "200") {
-            // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
-            callback(xobj.responseText);
-          }
-    };
-    xobj.send(null);  
- }
-
- loadJSON(function(response) {
+loadJSON(function(response) {
     // Parse JSON string into object
     actual_JSON = JSON.parse(response);
     changeWord(document.getElementById("word"));
-    document.getElementById("input").addEventListener("input",verifWord);    
-   });
+    setupEvenement();
+});
+
+function loadJSON(callback) {   
+    var xobj = new XMLHttpRequest();
+    xobj.overrideMimeType("application/json");
+    xobj.open('GET', 'data/dataFR.json', true); // Replace 'my_data' with the path to your file
+    xobj.onreadystatechange = function () {
+        if (xobj.readyState == 4 && xobj.status == "200") {
+        // Required use of an anonymous callback as .open will NOT return a value but simply returns undefined in asynchronous mode
+        callback(xobj.responseText);
+        }
+    };
+    xobj.send(null);  
+}
+
+function setupEvenement(){
+    document.getElementById("input").addEventListener("input", verifWord);
+    document.getElementById('bt_tips').addEventListener('click', giveTips);
+}
 
 function getRandomElement(data) {
     var index = Math.floor(Math.random() * data.length);
@@ -32,6 +36,7 @@ function getRandomElement(data) {
     
     return [element,data];
 }
+
 function normalizeString(str) {
     return str
         .replace(new RegExp(/\s/g), "")
@@ -49,13 +54,14 @@ function normalizeString(str) {
 }
 
 function verifWord(e){ 
-    var reponse = normalizeString(this.value);
+    var tips = document.getElementById('tips_preview');
+    var response = (tips.textContent || '') + normalizeString(this.value);
 
     // Vérifier si la réponse normalisée correspond à une des capitales normalisées
-    var capitalCorrect = currentElement.capital.some(cap => normalizeString(cap).toUpperCase() === reponse.toUpperCase());
+    var capitalCorrect = currentElement.capital.some(cap => normalizeString(cap).toUpperCase() === response.toUpperCase());
 
     if (capitalCorrect) {
-        increaseScore();
+        changeScore('increase');
         changeWord(document.getElementById("word"));
     }
 }
@@ -69,17 +75,23 @@ function changeWord(div){
     [currentElement, actual_JSON] = getRandomElement(actual_JSON);
     div.textContent = currentElement.country;
     document.getElementById("input").value = "";
+    document.getElementById("tips_preview").textContent = "";
     console.log(currentElement.country);
     console.log(currentElement.capital);
 }
 
-
-
-function increaseScore() {
-
+function changeScore(action) {
     score = Number(document.getElementById("score").textContent) || 0;
-    score += 1;
+    switch(action){
+        case 'increase':
+            score += 1;
+        break;
+        case 'split':
+            score = Math.trunc(score / 2);
+        break;
+    }
     document.getElementById("score").textContent = score;
+
 }
 
 function showSuccessMessage() {
@@ -87,3 +99,10 @@ function showSuccessMessage() {
     document.getElementById("input").style.display = "none"; 
 }
 
+function giveTips()
+{
+    var tips = document.getElementById('tips_preview');
+    var currentTips = tips.textContent || '' ;
+    tips.textContent = currentTips + '' + currentElement['capital'][0].substr(currentTips.length, 1);
+    changeScore('split');
+}

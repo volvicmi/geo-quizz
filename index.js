@@ -53,9 +53,16 @@ function normalizeString(str) {
         .replace(new RegExp(/\W/g), ""); // Remove all non-word characters including apostrophes
 }
 
-function verifWord(e){ 
-    var tips = document.getElementById('tips_preview');
-    var response = (tips.textContent || '') + normalizeString(this.value);
+function verifWord(){ 
+
+    var textContainer = document.getElementById('text-container');
+    var tips = textContainer.querySelector('.tips');
+    var currentTips = (tips ? tips.textContent : '');
+    
+    if(this.value.length < currentTips.length) this.value = currentTips;
+    textContainer.innerHTML = `<span class="tips">${currentTips}</span>${this.value.slice(currentTips.length)}`;
+    
+    var response = normalizeString(this.value);
 
     // Vérifier si la réponse normalisée correspond à une des capitales normalisées
     var capitalCorrect = currentElement.capital.some(cap => normalizeString(cap).toUpperCase() === response.toUpperCase());
@@ -64,6 +71,7 @@ function verifWord(e){
         changeScore('increase');
         changeWord(document.getElementById("word"));
     }
+
 }
 
 function changeWord(div){
@@ -75,7 +83,7 @@ function changeWord(div){
     [currentElement, actual_JSON] = getRandomElement(actual_JSON);
     div.textContent = currentElement.country;
     document.getElementById("input").value = "";
-    document.getElementById("tips_preview").textContent = "";
+    document.getElementById("text-container").textContent = "";
     console.log(currentElement.country);
     console.log(currentElement.capital);
 }
@@ -101,8 +109,12 @@ function showSuccessMessage() {
 
 function giveTips()
 {
-    var tips = document.getElementById('tips_preview');
-    var currentTips = tips.textContent || '' ;
-    tips.textContent = currentTips + '' + currentElement['capital'][0].substr(currentTips.length, 1);
+    var textContainer = document.getElementById('text-container');
+    var tips = textContainer.querySelector('.tips');
+    var currentTips = (tips ? tips.textContent : '');
+
+    const newTips = currentTips + '' + currentElement['capital'][0].substr(currentTips.length, 1);
+    textContainer.innerHTML = `<span class="tips">${newTips}</span>`;
+    document.getElementById('input').value = newTips;
     changeScore('split');
 }

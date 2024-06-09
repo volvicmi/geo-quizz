@@ -80,16 +80,36 @@ input{
     border-width: 2px;
     display: inline-block;
     text-align: center;
+    font-family: initial;
 }
 
 input:focus{
     outline: none ;
 }
 
-#tips_preview{
-    display: inline-block;
+.colored-input {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colored-input input {
+    background: none;
+    color: transparent;
+    caret-color: black;
+    font-size: 48px;
     width: 100%;
-    text-align: center;
-    font-size: 24px;
+    text-align:center;
+}
+
+.colored-input #text-container {
+    position: absolute;
+    pointer-events: none;
+    font-size: 48px;
+    text-align:center;
+}
+
+.colored-input #text-container .tips {
     color: green;
 }

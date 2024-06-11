@@ -134,12 +134,13 @@ input:focus{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 1px;
-    }
+        top: 55%;
+        font-size: 36px;
+      }
 
     .carte-holder{
         align-items: flex-start;
-        margin-top: 60px;
+        margin: 0px;
     }
 
     .carte {
@@ -147,6 +148,7 @@ input:focus{
         height: 365px;
         box-shadow: -30px 30px 30px -10px #9C7270E5;
         border-radius: 75px;
+        margin: 15px 5px 5px 5px;
     }
     
 
@@ -176,12 +178,13 @@ input:focus{
         display: flex;
         justify-content: center;
         align-items: center;
-        top: 1px;
+        top: 55%;
+        font-size: 36px;
     }
 
     .carte-holder{
         align-items: flex-start;
-        margin-top: 60px;
+        margin: 0px;
     }
 
     .carte {
@@ -189,6 +192,7 @@ input:focus{
         height: 365px;
         box-shadow: -30px 30px 30px -10px #9C7270E5;
         border-radius: 75px;
+        margin: 15px 5px 5px 5px;
     }
 
     .btn {

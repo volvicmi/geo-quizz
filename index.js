@@ -67,9 +67,11 @@ function verifWord(){
     // Vérifier si la réponse normalisée correspond à une des capitales normalisées
     var capitalCorrect = currentElement.capital.some(cap => normalizeString(cap).toUpperCase() === response.toUpperCase());
 
+    console.log(capitalCorrect);
     if (capitalCorrect) {
         changeScore('increase');
         changeWord(document.getElementById("word"));
+        console.log("le mot est correct");
     }
 
 }
@@ -117,4 +119,5 @@ function giveTips()
     textContainer.innerHTML = `<span class="tips">${newTips}</span>`;
     document.getElementById('input').value = newTips;
     changeScore('split');
+    document.getElementById("input").focus();
 }

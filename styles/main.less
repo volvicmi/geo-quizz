@@ -1,0 +1,43 @@
+// out: "../styles/main.css", compress: true, sourceMap: true
+
+// Variables et Mixins
+@import "base/variables";
+@import "base/mixins";
+
+// Styles de base
+@import "base/typography";
+
+// Mise en page
+@import "layout/header";
+@import "layout/footer";
+
+// Composants
+@import "components/menu";
+@import "components/button";
+@import "components/form";
+
+
+// Pages spécifiques
+@import "pages/home";
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background: @background-color; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+} 
+
+.mainApp{
+    width: 300px;
+    height: 600px;
+    background-color: rgb(65, 65, 65);
+}
+/* Media Queries for Responsiveness */
+
+/* @media (max-width: 768px) {
+
+} */

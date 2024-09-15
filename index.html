@@ -1,34 +1,37 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Géo Quizz</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
 
-
-
-<div class="mainApp">
-    <div class="menu">
-        <span class="return"></span>
-        <div class="advance">
-            <div id="score">0</div>
-            <span class="nameTag"></span>
+    <div id="app">
+        <h1>{{ message }}</h1>
+        <div class="mainApp">
+            <div class="menu">
+                <span class="return"></span>
+                <div class="advance">
+                    <div id="score">{{ score }}</div>
+                    <span class="nameTag">{{ nameTag }}</span>
+                </div>
+                <button class="btn" id="btnTips" @click="giveTips">?</button>
+            </div>
+            <div class="wordHolder">
+                <div class="btn" id="word">{{ currentWord }}</div>
+            </div> 
+            <div class="inputHolder">
+                <input class="btn" v-model="userInput" @input="verifWord" type="text" placeholder="">
+                <div id="textContainer">
+                    <span class="tips">{{ tips }}</span>{{ userInput.slice(tips.length) }}
+                </div>
+            </div>
         </div>
-        <button  class="btn" id="btnTips" >?</button>
     </div>
-    <div class="wordHolder">
-        <div class="btn" id="word">Pays</div>
-    </div> 
-    <div class="inputHolder">
-        <input class="btn" id="input" type="text" placeholder="">
-        <div id="textContainer"></div>
-    </div>
-    
-</div>
 
-
+    <script src="app.js"></script>
 </body>
-<script type="module" src="index.js"></script>
 </html>

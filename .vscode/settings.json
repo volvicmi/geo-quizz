@@ -1,0 +1,8 @@
+{
+    "less.compile": {
+      "out": false,  // Par défaut, désactive la compilation de tous les fichiers LESS
+      "sourceMap": true,  // Active la génération de cartes source (facultatif)
+      "compress": true  // Active la compression pour retirer les espaces inutiles
+    }
+  }
+  

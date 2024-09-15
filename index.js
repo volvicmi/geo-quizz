@@ -25,7 +25,7 @@ function loadJSON(callback) {
 
 function setupEvenement(){
     document.getElementById("input").addEventListener("input", verifWord);
-    document.getElementById('bt_tips').addEventListener('click', giveTips);
+    document.getElementById('btnTips').addEventListener('click', giveTips);
 }
 
 function getRandomElement(data) {
@@ -55,7 +55,7 @@ function normalizeString(str) {
 
 function verifWord(){ 
 
-    var textContainer = document.getElementById('text-container');
+    var textContainer = document.getElementById('textContainer');
     var tips = textContainer.querySelector('.tips');
     var currentTips = (tips ? tips.textContent : '');
     
@@ -111,7 +111,7 @@ function showSuccessMessage() {
 
 function giveTips()
 {
-    var textContainer = document.getElementById('text-container');
+    var textContainer = document.getElementById('textContainer');
     var tips = textContainer.querySelector('.tips');
     var currentTips = (tips ? tips.textContent : '');
 

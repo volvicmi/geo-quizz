@@ -1,5 +1,5 @@
 :root {
-    --main-bg-color: #fffcdc;
+    --main-bg-color: #ffffff;
     --gradient-bg-color: #FFFAF0 25%,#FFE0D0 50%;
     --word-bg-color: linear-gradient(#FEFFF9,#E8DECF);
     --input-bg-color: linear-gradient(#FEFFF9,#E8DECF);
@@ -9,207 +9,27 @@
 body{
     margin: 0;
     padding: 0;
-    height: 100%;
-    background: var(--main-bg-color);
-    /* background: linear-gradient(#d9a7c7,#fffcdc);  */
-    /* background: linear-gradient(#ffafbcc9,#ffc3a0cb);  */
-    background: linear-gradient(to bottom left, var(--gradient-bg-color)); 
+    background: var(--main-bg-color); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 } 
 
-#score{
-    position: absolute;
-    top: 7%;
-    right: 10%;
-    color: var(--font-color);
-    font-weight: bold;
-    font-size: 48px;
+.mainApp{
+    width: 300px;
+    height: 600px;
+    background-color: rgb(65, 65, 65);
+
+    .menu{
+
+    }
 }
 
-.carte-holder{
-    width:100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.carte{
-    position: relative;
-    width: 667px;
-    height: 667px;
-    border-radius: 140px;
-    border: 5px white solid;
-    box-shadow: -90px 90px 90px -25px #9C7270E5;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-image: url(./images/worldBg.jpg);
-    background-size: cover;
-    /* border-radius: 25px;
-    background-color: rgba(250, 255, 185, 0.719);
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.158);
-    padding: 20px; */
-}
-.word-holder{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-
-}
-.btn{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    width: 480px;
-    height: 100px;
-    border-radius: 65px;
-    border: none;
-    background: var(--input-bg-color);
-    box-shadow: -15px 35px 25px -10px #00000033;
-
-    font-size: 32px;
-    color: var(--font-color);
-    font-weight: bold;
-    font-family: initial;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-#bt_tips{
-    width: 70px;
-    height: 70px;
-    position: absolute;
-    bottom: 55px;
-    right: 50px;
-    border-radius: 50%;
-    font-size: 48px;
-    cursor: pointer;
-    transition: ease-in-out 300ms;
-    opacity: .9;
-}
-
-#bt_tips:hover {
-    transform: scale(1.1);
-    opacity: 1;
-  }
-
-input:focus{
-    outline: none ;
-}
-
-.input-holder {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-.input-holder #text-container {
-    position: absolute;
-    pointer-events: none;
-    font-size: 32px;
-    text-align: center;
-    font-family: initial;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: transparent;
-}
-
-.input-holder #text-container .tips {
-    color: #b90404;
-}
 
 
 /* Media Queries for Responsiveness */
 
-@media (max-width: 768px) {
-    #score {
-        width: 100%;
-        right: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 55%;
-        font-size: 36px;
-      }
+/* @media (max-width: 768px) {
 
-    .carte-holder{
-        align-items: flex-start;
-        margin: 0px;
-    }
-
-    .carte {
-        width: 365px;
-        height: 365px;
-        box-shadow: -30px 30px 30px -10px #9C7270E5;
-        border-radius: 75px;
-        margin: 15px 5px 5px 5px;
-    }
-    
-
-    .btn {
-        width: 300px;
-        height: 60px;
-        font-size: 20px;
-    }
-
-    #bt_tips {
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        right: 30px;
-        font-size: 36px;
-    }
-
-    .input-holder #text-container {
-        font-size: 20px;
-    }
-}
-
-@media (max-width: 480px) {
-    #score {
-        width: 100%;
-        right: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 55%;
-        font-size: 36px;
-    }
-
-    .carte-holder{
-        align-items: flex-start;
-        margin: 0px;
-    }
-
-    .carte {
-        width: 365px;
-        height: 365px;
-        box-shadow: -30px 30px 30px -10px #9C7270E5;
-        border-radius: 75px;
-        margin: 15px 5px 5px 5px;
-    }
-
-    .btn {
-        width: 300px;
-        height: 60px;
-        font-size: 20px;
-    }
-
-    #bt_tips {
-        width: 50px;
-        height: 50px;
-        bottom: 30px;
-        right: 30px;
-        font-size: 36px;
-    }
-
-    .input-holder #text-container {
-        font-size: 20px;
-    }
-}
+} */

@@ -6,32 +6,37 @@
     <title>Géo Quizz</title>
     <link rel="stylesheet" href="styles/main.css" />
     <script src="https://unpkg.com/vue@3"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
 </head>
 <body>
-
     <div id="app">
-        <h1>{{ message }}</h1>
-        <div class="mainApp">
-            <div class="menu">
-                <span class="return"></span>
-                <div class="advance">
-                    <div id="score">{{ score }}</div>
-                    <span class="nameTag">{{ nameTag }}</span>
-                </div>
-                <button class="btn" id="btnTips" @click="giveTips">?</button>
+        <header class="menu">
+            <span class="return"></span>
+            <div class="advance">
+                <div id="score">{{ progression }}</div>
+                <span class="nameTag">{{ nameTag }}</span>
             </div>
-            <div class="wordHolder">
-                <div class="btn" id="word">{{ currentWord }}</div>
-            </div> 
-            <div class="inputHolder">
-                <input class="btn" v-model="userInput" @input="verifWord" type="text" placeholder="">
-                <div id="textContainer">
+            <button class="btn" id="btnTips" @click="giveTips">?</button>
+        </header>
+        <div class="quizzHolder">
+            <div class="bgColorSwitch"></div>
+            <img src="images/worldBgApple.jpg" alt="">
+            <transition-group class="messageContainer" name="fade" tag="div" @enter="enterAnimation">
+                <div v-for="(message, index) in messages" :key="index" :class="message.type" v-html="message.text">
+                    {{ message.text }}
+                </div>
+            </transition-group>
+        </div> 
+        <div class="inputHolder">
+            <div class="inputDot"></div>
+            <div class="inputContainer">
+                <input id="userInput" v-model="userInput" @keydown.enter="verifWord" type="text" placeholder="">
+                <div id="letterTipsContainer">
                     <span class="tips">{{ tips }}</span>{{ userInput.slice(tips.length) }}
                 </div>
             </div>
         </div>
     </div>
-
     <script src="app.js"></script>
 </body>
 </html>

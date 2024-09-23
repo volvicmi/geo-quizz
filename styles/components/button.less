@@ -1,12 +1,22 @@
-button {
-    background-color: #42b983;
+button{
+    background-color: white;
     color: white;
-    padding: 10px;
     border: none;
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: @border-radius-default;
+    box-shadow: @box-shadow-default;
+    transition: @transition-hover;
+
+    &:hover {
+      transform: scale(1.05);
+    }
   }
-  
-  button:hover {
-    background-color: #358a6b;
-  }
+
+#btnTips{
+  position: absolute;
+  right: 15px;
+  color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: @border-radius-circle;
+}

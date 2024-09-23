@@ -1,5 +1,9 @@
 // out: "../styles/main.css", compress: true, sourceMap: true
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
 // Variables et Mixins
 @import "base/variables";
 @import "base/mixins";
@@ -12,32 +16,39 @@
 @import "layout/footer";
 
 // Composants
-@import "components/menu";
 @import "components/button";
-@import "components/form";
+@import "components/input";
+@import "components/score";
+@import "components/mainAppWordGuess";
+
 
 
 // Pages spécifiques
 @import "pages/home";
 
-
-body{
+* {
     margin: 0;
     padding: 0;
-    background: @background-color; 
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+body{   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-color: @background-color;
 } 
 
-.mainApp{
+#app{
+    display: flex;
+    flex-direction: column;
     width: 300px;
-    height: 600px;
     background-color: rgb(65, 65, 65);
 }
-/* Media Queries for Responsiveness */
-
-/* @media (max-width: 768px) {
-
-} */

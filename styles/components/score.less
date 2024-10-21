@@ -5,22 +5,48 @@
     align-items: center;
 
     #score{
-        background: white;
+        background: @bgColorScore;
         box-shadow: @box-shadow-default;
         border-radius: @border-radius-circle;
-        width: 40px;
-        height: 40px;
-        color:@color-yellow;
+        width: 60px;
+        height: 60px;
+        
         display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: @font-size-default;
+            justify-content: center;
+            align-items: center;
+
+        .progressCircle {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+                justify-content: center;
+                align-items: center;
+            position: relative;
+          
+            .progressValue{
+                background: @bgColorScore;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                    justify-content: center;
+                    align-items: center;
+                position: absolute;
+                color: @mainColor;
+                font-weight: 600;
+                font-size: @font-size-default;
+                font-family: @font-familly-default;
+            }
+          }
     }
     .nameTag{
         margin-top: 5px;
         color:@text-color;
         font-size: @font-size-light;
         font-weight: 500;
-        font-family: Montserrat;
+        font-family: @font-familly-default;
     }
 }
+
+

@@ -1,61 +1,76 @@
 .inputHolder{
     background: white;
-    padding: 5px;
+    padding:15px 20px;
     display: flex;
     align-items: center;
 
     .inputDot{
         border-radius: @border-radius-circle;
         background-color: rgb(226, 226, 226);
-        width: 20px;
-        height: 20px;
+        width: 29px;
+  		height: 29px;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+		flex-shrink: 0;
 
-        &::before, &::after{
-            position: absolute;
-            content: "";
-            width: 8px;
-            height: 1px;
-            background-color: rgb(158, 158, 158);
-        }
-        &::after{
-            transform: rotate(90deg);
-        }
+		svg{
+			width: 14.5px;
+			height: 14.5px;
+		}
     }
     .inputContainer{
         position: relative;
-        margin: 0 10px;
+        margin-left: 10px;
         flex-grow: 1;
         display: flex;
         justify-content: center;
         align-items: center;
 
         #userInput{
-            border-radius: @border-radius-default;
-            border: 1px solid grey;
-            padding: 0 10px;
             width: 100%;
-            line-height: 1.5;
+			border-radius: 15px;
+			border: 1px solid #7E7F84;
+			color:black;
+            padding: 3px 10px;
+            line-height: 1;
             font-size: @font-size-default;
             font-weight: @font-weight-default;
             font-family: montserrat;
+
+			&:focus-visible {
+				outline: 2px solid black;
+			}
         }
         #letterTipsContainer{
             width: 100%;
             position: absolute;
-            padding: 0 11px;
-            line-height: 1.5;
+			padding: 3px 10px;
+            line-height: 1;
             font-size: @font-size-default;
             font-family: montserrat;
             pointer-events: none;
             color: transparent;
-            font-weight: @font-weight-default;
+            font-weight: 700;
+			letter-spacing: -0.13px;
+
             .tips{
-                color: red;
+				color: #a00;
             }
         }
     }
+}
+
+@media (max-width: @tablet) {
+	.inputHolder{
+		padding:5px 10px;
+	}
+}
+
+
+@media (max-width: @mobile) {
+	.inputHolder{
+		padding:5px 10px;
+	}
 }

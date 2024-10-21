@@ -1,0 +1,76 @@
+.pageList {
+	background-color: white;
+	user-select: text;
+}
+.list {
+	
+	header {
+		height: 108px;
+		padding: 20px;
+		justify-content: center;
+		flex-direction: column;
+
+		#return {
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.title {
+			font-size:28px;
+			font-weight: 700;
+		}
+	}
+
+	.listHolder {
+		overflow-y: scroll;
+		margin-top: 108px;
+		padding: 20px;
+		max-height: calc(100vh - 108px);
+
+		/* Masquer la scrollbar pour IE et Edge */
+		-ms-overflow-style: none; /* Internet Explorer and Edge */
+		
+		/* Masquer la scrollbar pour Firefox */
+		scrollbar-width: none; /* Firefox */
+	  
+		/* Masquer la scrollbar pour Webkit (Chrome, Safari) */
+		&::-webkit-scrollbar {
+		  display: none; /* Chrome, Safari, Webkit */
+		}
+
+		.country-item {
+			padding: 10px 0;
+			border-bottom: @color-lightgrey 1px solid ;
+			display: flex;
+			font-size: @font-size-default;
+			
+			&:last-child {
+				border: none;
+			}
+			.countryTag::first-letter, .capitalTag::first-letter {
+				text-transform: capitalize;
+			}
+			.countryTag {
+				font-weight: 600;
+			}
+			.capitalTag {
+				margin-left: 5px;
+			}
+		}
+		input {
+			width: 100%;
+			border-radius: 10px;
+			border: none;
+			background: #e8e8e8;
+			padding: 10px;
+	
+			&:focus-visible {
+				outline: 2px solid black;
+			}
+		}
+		mark {
+			background-color: @mainColor; 
+		}
+	}
+}

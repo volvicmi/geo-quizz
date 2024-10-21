@@ -1,35 +1,49 @@
-
 .quizzHolder{
     position: relative;
     display: flex;
     align-items: flex-end;
     flex-grow: 1;
-
+	
     .bgColorSwitch{
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background:@bgColorSwitch;
+        background:@mainColor;
+		filter: grayscale(40%);
     }
     img{
         position: absolute;
-        object-fit: none;
+        // object-fit: none;
+        object-fit: cover;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         mix-blend-mode: luminosity;
+        filter: brightness(0.7);
     }
-    .messageContainer{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        padding: 20px;
-        height: 400px;
-        overflow-y: scroll;
-        z-index: 1;
+    .messageContainer {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		max-height: calc(~"676px - 36px");
+		padding: @padding-default;
+		overflow-y: scroll; /* Active le défilement vertical */
+		overflow-x: hidden; /* Désactive le défilement horizontal */
+		z-index: 1;
+		
+		/* Masquer la scrollbar pour IE et Edge */
+		-ms-overflow-style: none; /* Internet Explorer and Edge */
+		
+		/* Masquer la scrollbar pour Firefox */
+		scrollbar-width: none; /* Firefox */
+	  
+		/* Masquer la scrollbar pour Webkit (Chrome, Safari) */
+		&::-webkit-scrollbar {
+		  display: none; /* Chrome, Safari, Webkit */
+		}
 
         > div:first-child {
             margin-top: auto; /* Pousse le dernier élément vers le bas */
@@ -42,11 +56,25 @@
             font-size: @font-size-default;
             font-weight: @font-weight-default;
             font-family: montserrat;
+            line-height: 1.5;
             margin-bottom: 5px;
             max-width: 80%;
             width: fit-content;
             align-self: flex-start;
             animation: all .3s ease;
+
+			&.hiddenBlock{
+				opacity: 0; 
+				pointer-events:none;
+				display: block;
+				margin:inherit; 
+				padding: 0;
+				
+				> span{
+					display: block;
+					height:108px; 
+				}
+			}
 
             .word{
                 display: inline-block;
@@ -69,6 +97,7 @@
             font-size: @font-size-default;
             font-weight: @font-weight-default;
             font-family: montserrat;
+            line-height: 1.5;
             margin-bottom: 5px;
             align-self: flex-end;
             width: fit-content;
@@ -77,5 +106,41 @@
                 text-transform: capitalize;
             }
         }
+		.imageHolder{
+			background: white;
+            padding: 10px;
+            border-radius: 15px;
+            font-size: @font-size-default;
+            font-weight: @font-weight-default;
+            font-family: montserrat;
+            line-height: 1.5;
+            margin-bottom: 5px;
+            max-width: 80%;
+            width: fit-content;
+            align-self: flex-start;
+            animation: all .3s ease;
+			
+			img {
+				max-width: 100%;
+				border-radius: 10px;
+				margin-top: 10px;
+			}
+		} 
     }
+}
+
+
+
+
+@media (max-width: @tablet) {
+	.messageContainer{
+		max-height: calc(~"90% - 36px");
+	}
+}
+
+
+@media (max-width: @mobile) {
+	.messageContainer{
+		max-height: calc(~"90% - 36px");
+	}
 }

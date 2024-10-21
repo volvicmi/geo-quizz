@@ -5,38 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Géo Quizz</title>
     <link rel="stylesheet" href="styles/main.css" />
+    <!-- Import Vue CDN -->
     <script src="https://unpkg.com/vue@3"></script>
+    <!-- Import Vue Router CDN -->
+    <script src="https://unpkg.com/vue-router@4"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Charger les fichiers de composants -->
+	<script src="./pages/home.js"></script>
+	<script src="./pages/login.js"></script>
+    <script src="./pages/levels.js"></script>
+	<script src="./pages/list.js"></script>
+    <script src="./pages/quiz.js"></script>
 </head>
 <body>
+	
     <div id="app">
-        <header class="menu">
-            <span class="return"></span>
-            <div class="advance">
-                <div id="score">{{ progression }}</div>
-                <span class="nameTag">{{ nameTag }}</span>
-            </div>
-            <button class="btn" id="btnTips" @click="giveTips">?</button>
-        </header>
-        <div class="quizzHolder">
-            <div class="bgColorSwitch"></div>
-            <img src="images/worldBgApple.jpg" alt="">
-            <transition-group class="messageContainer" name="fade" tag="div" @enter="enterAnimation">
-                <div v-for="(message, index) in messages" :key="index" :class="message.type" v-html="message.text">
-                    {{ message.text }}
-                </div>
-            </transition-group>
-        </div> 
-        <div class="inputHolder">
-            <div class="inputDot"></div>
-            <div class="inputContainer">
-                <input id="userInput" v-model="userInput" @keydown.enter="verifWord" type="text" placeholder="">
-                <div id="letterTipsContainer">
-                    <span class="tips">{{ tips }}</span>{{ userInput.slice(tips.length) }}
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="app.js"></script>
+		<div class="screen" ref="screen">
+			<div class="bgHome">
+				<img src="images/homeBg.jpg" alt="geoquiz">
+			</div>
+			<router-view v-slot="{ Component }">
+				<transition :name="transitionName" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave" >
+					<component :is="Component" />
+				</transition>
+			</router-view>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>

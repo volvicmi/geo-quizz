@@ -1,9 +1,28 @@
 header{
-    position: relative;
+    position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    background-color: white;
-    padding:15px;
+    width: 100%;
+    z-index: 10;
+
+    background-color: #fffffff2;
+    backdrop-filter: blur(2px);
+	box-shadow: 0px 4px 8px 0px #00000038;
+
+    padding: @padding-default @padding-default 5px @padding-default;
+	border-radius: 40px 40px 0 0;
 }  
 
+@media (max-width: @tablet) {
+	header{ 
+		border-radius: 0;
+	}
+}
+
+
+@media (max-width: @mobile) {
+	header{ 
+		border-radius: 0;
+	}
+}

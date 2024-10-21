@@ -8,7 +8,7 @@
   },
   {
     "prefix": "de l'",
-    "country": "Albanie",
+    "country": "albanie",
     "capital": [
       "tirana"
     ]
@@ -26,70 +26,70 @@
     "capital": [
       "andorre la vieille"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "angola",
     "capital": [
       "luanda"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Antigua et Barbuda",
     "capital": [
       "saint johns"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "argentine",
     "capital": [
       "buenos aires"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Arménie",
     "capital": [
       "erevan"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Australie",
     "capital": [
       "canberra"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Autriche",
     "capital": [
       "vienne"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Azerbaïdjan",
     "capital": [
       "bakou"
     ]
-  },
+},
   {
     "prefix": "des",
     "country": "bahamas",
     "capital": [
       "nassau"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "bahreïn",
     "capital": [
       "manama"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "bangladesh",
@@ -103,35 +103,35 @@
     "capital": [
       "bridgetown"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "biélorussie",
     "capital": [
       "minsk"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "Belgique",
     "capital": [
       "bruxelles"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "belize",
     "capital": [
       "belmopan"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "bénin",
     "capital": [
       "porto-novo"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "bhoutan",
@@ -143,93 +143,95 @@
     "prefix": "de la",
     "country": "bolivie",
     "capital": [
-      "la paz", "sucre"
+      "la paz",
+      "sucre"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "bosnie-herzégovine",
     "capital": [
       "sarajevo"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "botswana",
     "capital": [
       "gaborone"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "brésil",
     "capital": [
       "brasilia"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "brunei",
     "capital": [
       "bandar seri begawan"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "bulgarie",
     "capital": [
       "sofia"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "burkina faso",
     "capital": [
       "ouagadougou"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "burundi",
     "capital": [
-      "Gitega", "bujumbura"
+      "Gitega",
+      "bujumbura"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "Cambodge",
     "capital": [
       "phnom penh"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "Cameroun",
     "capital": [
       "yaoundé"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "canada",
     "capital": [
       "ottawa"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "cap-vert",
     "capital": [
       "praia"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "république centrafricaine",
     "capital": [
       "bangui"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "tchad",
@@ -243,91 +245,92 @@
     "capital": [
       "santiago"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "chine",
     "capital": [
       "pékin"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "colombie",
     "capital": [
       "bogotá"
     ]
-  },
+},
   {
     "prefix": "des",
     "country": "Comores",
     "capital": [
       "Moroni"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "république démocratique du congo",
     "capital": [
       "kinshasa"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "république du congo",
     "capital": [
       "brazzaville"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "costa rica",
     "capital": [
       "san José"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "Côte d’Ivoire",
     "capital": [
-      "yamoussoukro", "Abidjan"
+      "yamoussoukro",
+      "Abidjan"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "croatie",
     "capital": [
       "zagreb"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "cuba",
     "capital": [
       "la Havane"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "chypre",
     "capital": [
       "nicosie"
     ]
-  },
+},
   {
     "prefix": "de la",
     "country": "tchéquie",
     "capital": [
       "prague"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "danemark",
     "capital": [
       "copenhague"
     ]
-  },
+},
   {
     "prefix": "de",
     "country": "djibouti",
@@ -348,26 +351,28 @@
     "capital": [
       "santo domingo"
     ]
-  },
+},
   {
     "prefix": "du",
     "country": "Timor oriental",
-    "capital": "dili"
-  },
+    "capital": [
+		"dili"
+	]
+},
   {
     "prefix": "de l'",
     "country": "Équateur",
     "capital": [
       "quito"
     ]
-  },
+},
   {
     "prefix": "de l'",
     "country": "Égypte",
     "capital": [
       "le Caire"
     ]
-  },
+},
   {
     "prefix": "d'",
     "country": "El Salvador",
@@ -470,7 +475,8 @@
     "prefix": "de la",
     "country": "Grenade",
     "capital": [
-      "saint georges", "st georges"
+      "saint georges",
+      "st georges"
     ]
   },
   {
@@ -505,7 +511,7 @@
     "prefix": "d'",
     "country": "Haïti",
     "capital": [
-      "port-au-prince"
+      "port au prince"
     ]
   },
   {
@@ -617,7 +623,8 @@
     "prefix": "de",
     "country": "Kiribati",
     "capital": [
-      "atoll de tarawa", "Tarawa-Sud"
+      "atoll de tarawa",
+      "Tarawa-Sud"
     ]
   },
   {
@@ -645,7 +652,8 @@
     "prefix": "du",
     "country": "Koweït",
     "capital": [
-      "ville du Koweït", "Koweït"
+      "ville du Koweït",
+      "Koweït"
     ]
   },
   {
@@ -729,7 +737,8 @@
     "prefix": "de",
     "country": "Madagascar",
     "capital": [
-      "antananarivo", "tananarive"
+      "antananarivo",
+      "tananarive"
     ]
   },
   {
@@ -944,7 +953,7 @@
   },
   {
     "prefix": "de la",
-    "country": "Papouasie-Nouvelle Guinée",
+    "country": "Papouasie Nouvelle Guinée",
     "capital": [
       "port moresby"
     ]
@@ -960,7 +969,8 @@
     "prefix": "du",
     "country": "Pérou",
     "capital": [
-      "lima", "district de lima"
+      "lima",
+      "district de lima"
     ]
   },
   {
@@ -1014,7 +1024,7 @@
   },
   {
     "prefix": "de",
-    "country": "Saint-Christophe-et-Niévès",
+    "country": "Saint Christophe et Niévès",
     "capital": [
       "basseterre"
     ]
@@ -1028,7 +1038,7 @@
   },
   {
     "prefix": "de",
-    "country": "Saint-Vincent-et-les Grenadines",
+    "country": "Saint Vincent et les Grenadines",
     "capital": [
       "kingstown"
     ]
@@ -1128,7 +1138,9 @@
     "prefix": "d'",
     "country": "Afrique du Sud",
     "capital": [
-      "pretoria", "le Cap", "bloemfontein"
+      "pretoria",
+      "le Cap",
+      "bloemfontein"
     ]
   },
   {
@@ -1212,7 +1224,8 @@
     "prefix": "de la",
     "country": "Tanzanie",
     "capital": [
-      "dar es salaam", "dodoma"
+      "dar es salaam",
+      "dodoma"
     ]
   },
   {

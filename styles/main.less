@@ -2,6 +2,7 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap');
 
 
 // Variables et Mixins
@@ -14,6 +15,9 @@
 // Mise en page
 @import "layout/header";
 @import "layout/footer";
+@import "layout/home";
+@import "layout/login";
+@import "layout/list";
 
 // Composants
 @import "components/button";
@@ -21,10 +25,10 @@
 @import "components/score";
 @import "components/mainAppWordGuess";
 
-
+// Utils
+@import "utils/transition";
 
 // Pages spécifiques
-@import "pages/home";
 
 * {
     margin: 0;
@@ -33,22 +37,135 @@
 }
 
 html, body {
-    height: 100%;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    height: 100%;
 }
-
 body{   
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: @background-color;
+	overflow: hidden;
 } 
-
 #app{
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    background-color: rgb(65, 65, 65);
+	position: relative;
+	width: 353px;
+  	height: 726px;
+	overflow: hidden;
+	user-select: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	background-image: url(../images/iphone.png);
+	// background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	// background-color: @mainColor;
+	// background-blend-mode: luminosity;
+	// backdrop-filter: blur(8px) brightness(0.6);
+
+	
+	.bgHome{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+		background-color: @mainColor;
+		filter:grayscale(40%);
+		transition: background-color 0.5s ease;
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+			mix-blend-mode: luminosity;
+			filter: brightness(.6);
+			
+        }
+	}
+	.otherBackground {
+		top:0;
+		background-color: @mainColor;
+		filter: grayscale(40%) brightness(0.8);
+		width: 100%;
+		height: 100%;
+	}
+}
+.screen{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	max-width: 324px;
+	  max-height: 700px;
+	overflow: hidden;
+	border-radius: 40px;
+}
+.mainApp{
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+
+		// Version pc
+		width: 100%;
+        height: 100%;
+}
+
+
+@media (max-width: @tablet) {
+    html, body{
+        height: auto;
+    }
+	#app{
+		width: 100%;
+        height: 100%;
+        max-width: initial;
+        max-height: initial;
+		background: none;
+
+		.screen {
+			width: 100%;
+			height: 100%;
+			max-width: initial;
+        	max-height: initial;
+			border-radius: 0;
+		}
+	}
+    .mainApp{
+        width: 100%;
+        height: 100%;
+        max-width: initial;
+        max-height: initial;
+    }
+	
+}
+
+
+@media (max-width: @mobile) {
+    html, body{
+        height: auto;
+    }
+	#app{
+		width: 100%;
+        height: 100%;
+        max-width: initial;
+        max-height: initial;
+		background: none;
+
+		.screen {
+			width: 100%;
+			height: 100%;
+			max-width: initial;
+        	max-height: initial;
+			border-radius: 0;
+		}
+	}
+    .mainApp{
+        width: 100%;
+        height: 100%;
+        max-width: initial;
+        max-height: initial;
+    }
+	
 }

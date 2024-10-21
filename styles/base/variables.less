@@ -1,12 +1,22 @@
 // Couleurs
+:root {
+    --mainColor: #aed7e5;
+    --bgColorScore: white;
+}
+@mainColor:var(--mainColor);
+@bgColorScore:white;
+
+@color-white:white;
+@color-lightgrey:#e2e2e2;
 @color-yellow: #F2CF7D;
-@color-blue: #79D3EE;
+@color-blue: #3B80F5;
 @color-pink: #E9C1FF;
 @background-color:rgb(63, 63, 63);
 @text-color: #333;
 
+// Padding
 
-@bgColorSwitch:#86E2FF;
+@padding-default:20px;
 
 // Espacements
 @spacing-small: 8px;
@@ -14,10 +24,15 @@
 @spacing-large: 32px;
 
 // Typographie
-@font-size-light: 12px;
-@font-size-default: 14px;
+@font-familly-default:"montserrat", sans-serif;
+@font-familly-REM:"REM", sans-serif;
+
+@font-size-extra-light: 12px;
+@font-size-light: 14px;
+@font-size-default: 16px;
 @font-size-large: 24px;
 
+@font-weight-tigh:200;
 @font-weight-default:500;
 @font-weight-bold:700;
 
@@ -35,3 +50,11 @@
 // Transition
 @transition-hover:all 150ms ease-in-out;
 @transition-ease-default:all .3s ease;
+
+// Responsive / points de rupture 
+:root {
+    --tablet: 880px;
+    --mobile: 480px;
+}
+@tablet: 880px;
+@mobile: 480px;

@@ -109,6 +109,7 @@ app.mixin({
 				// Slide beforeEnter
 				gsap.set(el, {
 					top: '100%',
+					
 					position: "absolute",
 					transformOrigin:"bottom",
 					zIndex: 2
@@ -116,7 +117,6 @@ app.mixin({
 			} else if (this.transitionName === 'slideInverse') {
 			  // SlideInverse beforeEnter
 			  	gsap.set(el, {
-					filter:'blur(20px) grayscale(.7)',
 					scale: 0,
 					zIndex: 1
 			  	});
@@ -135,6 +135,7 @@ app.mixin({
 						opacity: 0
 					});
 				}
+				
 			} else {
 				// Animation par défaut
 				gsap.set(el, { 
@@ -173,17 +174,34 @@ app.mixin({
 						} else {
 							done(); 
 						}
+						const bgHome = document.querySelector('.bgHome');  
+						if (bgHome) {
+							gsap.set(bgHome, {
+								filter: "blur(10px) grayscale(50%)",
+								duration: .2,
+								ease: 'power2.inOut',
+								onComplete: done 
+							});
+						}
 					}
 				});
 			} else if (this.transitionName === 'slideInverse') {
 				// SlideInverse enter
 					gsap.to(el, {
-						filter:'blur(0px) grayscale(0)',
 						scale: 1,
 						duration: .5,
 						ease: "power4.inOut",
 						onComplete: done
 					});
+					const bgHome = document.querySelector('.bgHome');  
+					if (bgHome) {
+						gsap.set(bgHome, {
+							filter: "blur(0) grayscale(50%)",
+							duration: .2,
+							ease: 'power2.inOut',
+							onComplete: done 
+						});
+					}
 			  	} else {
 					// Animation par défaut
 					gsap.to(el, { 

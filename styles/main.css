@@ -419,6 +419,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  border-radius: 38px;
 }
 .login .bgLock {
   position: absolute;

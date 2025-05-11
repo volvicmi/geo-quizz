@@ -26,7 +26,7 @@
 		overflow-y: scroll;
 		margin-top: 108px;
 		padding: 20px;
-		max-height: calc(100vh - 108px);
+		max-height: calc(700px - 108px);
 
 		/* Masquer la scrollbar pour IE et Edge */
 		-ms-overflow-style: none; /* Internet Explorer and Edge */
@@ -72,5 +72,20 @@
 		mark {
 			background-color: @mainColor; 
 		}
+	}
+}
+
+
+
+@media (max-width: @tablet) {
+	.mainApp .list .listHolder {
+		max-height: calc(100vh - 108px);
+	}
+}
+
+
+@media (max-width: @mobile) {
+	.mainApp .list .listHolder {
+		max-height: calc(100vh - 108px);
 	}
 }

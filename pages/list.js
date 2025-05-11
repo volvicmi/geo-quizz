@@ -62,7 +62,7 @@ const list = {
 			  this.error = null;
   
 			  // Récupérer le fichier JSON
-			  const response = await fetch('data/dataFR.json'); // Mettre le chemin correct vers ton fichier JSON
+			  const response = await fetch('data/dataGLOBAL.json'); // Mettre le chemin correct vers ton fichier JSON
 			  if (!response.ok) {
 				throw new Error('Erreur lors du chargement du fichier JSON');
 			  }

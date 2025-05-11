@@ -1,0 +1,340 @@
+[
+  {
+    "country": "Albanie",
+    "capital": [
+      "Tirana"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Allemagne",
+    "capital": [
+      "Berlin"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Andorre",
+    "capital": [
+      "Andorre-la-Vieille"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Arménie",
+    "capital": [
+      "Erevan"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Autriche",
+    "capital": [
+      "Vienne"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Azerbaïdjan",
+    "capital": [
+      "Bakou"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Belgique",
+    "capital": [
+      "Bruxelles"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Biélorussie",
+    "capital": [
+      "Minsk"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Bosnie-Herzégovine",
+    "capital": [
+      "Sarajevo"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Bulgarie",
+    "capital": [
+      "Sofia"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Croatie",
+    "capital": [
+      "Zagreb"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Danemark",
+    "capital": [
+      "Copenhague"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Espagne",
+    "capital": [
+      "Madrid"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Estonie",
+    "capital": [
+      "Tallinn"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Finlande",
+    "capital": [
+      "Helsinki"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "France",
+    "capital": [
+      "Paris"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Géorgie",
+    "capital": [
+      "Tbilissi"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Grèce",
+    "capital": [
+      "Athènes"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Hongrie",
+    "capital": [
+      "Budapest"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Irlande",
+    "capital": [
+      "Dublin"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Islande",
+    "capital": [
+      "Reykjavik"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Italie",
+    "capital": [
+      "Rome"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Lettonie",
+    "capital": [
+      "Riga"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Liechtenstein",
+    "capital": [
+      "Vaduz"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Lituanie",
+    "capital": [
+      "Vilnius"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Luxembourg",
+    "capital": [
+      "Luxembourg"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Macédoine",
+    "capital": [
+      "Skopje"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Malte",
+    "capital": [
+      "La Valette"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Moldavie",
+    "capital": [
+      "Chisinau"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Monaco",
+    "capital": [
+      "Communauté de Monaco",
+	  "Monaco"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Monténégro",
+    "capital": [
+      "Podgorica"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Norvège",
+    "capital": [
+      "Oslo"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Pays-Bas",
+    "capital": [
+      "Amsterdam"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Pologne",
+    "capital": [
+      "Varsovie"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Portugal",
+    "capital": [
+      "Lisbonne"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "République Tchèque",
+    "capital": [
+      "Prague"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Roumanie",
+    "capital": [
+      "Bucarest"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Royaume-Uni",
+    "capital": [
+      "Londres"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Russie",
+    "capital": [
+      "Moscou"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Saint-Marin",
+    "capital": [
+      "Ville de Saint Marin",
+	  "Saint Marin"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Serbie",
+    "capital": [
+      "Belgrade"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Slovaquie",
+    "capital": [
+      "Bratislava"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Slovénie",
+    "capital": [
+      "Ljubljana"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Suède",
+    "capital": [
+      "Stockholm"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Suisse",
+    "capital": [
+      "Berne"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Turquie",
+    "capital": [
+      "Ankara"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Ukraine",
+    "capital": [
+      "Kiev"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Vatican",
+    "capital": [
+      "Vatican"
+    ],
+    "prefix": "du "
+  }
+]

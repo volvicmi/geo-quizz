@@ -1,0 +1,86 @@
+[
+  {
+    "country": "Argentine",
+    "capital": [
+      "Buenos Aires"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Bolivie",
+    "capital": [
+      "Sucre, La paz"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Brésil",
+    "capital": [
+      "Brasilia"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Chili",
+    "capital": [
+      "Santiago du Chili"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Colombie",
+    "capital": [
+      "Bogotá"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Equateur",
+    "capital": [
+      "Quito"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Guyana",
+    "capital": [
+      "Georgetown"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Paraguay",
+    "capital": [
+      "Asunción"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Pérou",
+    "capital": [
+      "Lima"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Surinam",
+    "capital": [
+      "Paramaribo"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Uruguay",
+    "capital": [
+      "Montevideo"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Vénézuéla",
+    "capital": [
+      "Caracas"
+    ],
+    "prefix": "du "
+  }
+]

@@ -1,0 +1,380 @@
+[
+  {
+    "country": "Afrique du Sud",
+    "capital": [
+      "Pretoria"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Algérie",
+    "capital": [
+      "Alger"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Angola",
+    "capital": [
+      "Luanda"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Bénin",
+    "capital": [
+      "Porto Novo"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Botswana",
+    "capital": [
+      "Gaborone"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Burkina Faso",
+    "capital": [
+      "Ouagadougou"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Burundi",
+    "capital": [
+      "Bujumbura"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Cameroun",
+    "capital": [
+      "Yaoundé"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Cap-Vert",
+    "capital": [
+      "Praia"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Comores",
+    "capital": [
+      "Moroni"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Côte d'Ivoire",
+    "capital": [
+      "Yamoussoukro"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Djibouti",
+    "capital": [
+      "Djibouti"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Égypte",
+    "capital": [
+      "Le Caire"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Érythrée",
+    "capital": [
+      "Asmara"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Éthiopie",
+    "capital": [
+      "Addis-Abeba"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Gabon",
+    "capital": [
+      "Libreville"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Gambie",
+    "capital": [
+      "Banjul"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Ghana",
+    "capital": [
+      "Accra"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Guinée",
+    "capital": [
+      "Conakry"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Guinée équatoriale",
+    "capital": [
+      "Malabo"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Guinée-Bissau",
+    "capital": [
+      "Bissau"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Kenya",
+    "capital": [
+      "Nairobi"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Lesotho",
+    "capital": [
+      "Maseru"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Liberia",
+    "capital": [
+      "Monrovia"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Libye",
+    "capital": [
+      "Tripoli"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Madagascar",
+    "capital": [
+      "Antananarivo"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Malawi",
+    "capital": [
+      "Lilongwe"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Mali",
+    "capital": [
+      "Bamako"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Maroc",
+    "capital": [
+      "Rabat"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Maurice",
+    "capital": [
+      "Port-Louis"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Mauritanie",
+    "capital": [
+      "Nouakchott"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Mozambique",
+    "capital": [
+      "Maputo"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Namibie",
+    "capital": [
+      "Windhoek"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Niger",
+    "capital": [
+      "Niamey"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Nigeria",
+    "capital": [
+      "Abuja"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Ouganda",
+    "capital": [
+      "Kampala"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "République centrafricaine",
+    "capital": [
+      "Bangui"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "République Démocratique du Congo",
+    "capital": [
+      "Kinshasa"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "République du Congo",
+    "capital": [
+      "Brazzaville"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Rwanda",
+    "capital": [
+      "Kigali"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "São Tomé-et-Príncipe",
+    "capital": [
+      "São Tomé"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Sénégal",
+    "capital": [
+      "Dakar"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Seychelles",
+    "capital": [
+      "Victoria"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Sierra Leone",
+    "capital": [
+      "Freetown"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Somalie",
+    "capital": [
+      "Mogadiscio"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Soudan",
+    "capital": [
+      "Khartoum"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Sud-Soudan",
+    "capital": [
+      "Djouba"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Swaziland",
+    "capital": [
+      "Mbabane"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Tanzanie",
+    "capital": [
+      "Dodoma"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Tchad",
+    "capital": [
+      "Ndjamena"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Togo",
+    "capital": [
+      "Lomé"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Tunisie",
+    "capital": [
+      "Tunis"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Zambie",
+    "capital": [
+      "Lusaka"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Zimbabwe",
+    "capital": [
+      "Harare"
+    ],
+    "prefix": "du "
+  }
+]

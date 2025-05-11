@@ -15,7 +15,7 @@ const quiz = {
 					</div>
 					<span class="nameTag">{{ username }}</span>
 				</div>
-				<button id="btnTips" class="btn btnClickAnimation" @mousedown.prevent="giveTips">
+				<button id="btnTips" class="btn btnClickAnimation" @mousedown.prevent="giveTips" @touchstart.prevent="giveTips">
 					<svg width="30" height="32" viewBox="0 0 30 32" fill="none" xmlns="http://www.w3.org/2000/svg">
 						<path d="M14.9999 6.18333C15.8366 6.18333 16.3944 5.62556 16.3944 4.78889V3.39444C16.3944 2.55778 15.8366 2 14.9999 2C14.1632 2 13.6055 2.55778 13.6055 3.39444V4.78889C13.6055 5.62556 14.1632 6.18333 14.9999 6.18333Z" fill="black"/>
 						<path d="M26.1561 13.1558H24.7616C23.925 13.1558 23.3672 13.7135 23.3672 14.5502C23.3672 15.3869 23.925 15.9447 24.7616 15.9447H26.1561C26.9927 15.9447 27.5505 15.3869 27.5505 14.5502C27.5505 13.7135 26.9927 13.1558 26.1561 13.1558Z" fill="black"/>
@@ -31,7 +31,7 @@ const quiz = {
 			</header>
 			<div class="quizzHolder" ref="quizzHolder">
 				<div class="bgColorSwitch"></div>
-				<img src="images/worldBgApple.jpg" alt="">
+				<img :src="$root.preloadedImageSrc" alt="géoquiz">
 				<transition-group class="messageContainer" ref="messageContainer" name="fade" tag="div" @enter="enterAnimation">
 					<div class="questionHolder hiddenBlock" :key="'questionHolder'"><span>test</span></div>
 					<div v-for="(message, index) in messages" :key="index" :class="message.type" v-html="message.text">
@@ -39,14 +39,25 @@ const quiz = {
 				</transition-group>
 			</div> 
 			<div class="inputHolder" ref="inputHolder">
-				<div class="inputDot">
-					<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M15 8L1 8" stroke="#7E7F84" stroke-width="2" stroke-linecap="round"/>
-						<path d="M8 1L8 15" stroke="#7E7F84" stroke-width="2" stroke-linecap="round"/>
+				<router-link to="/list" class="inputDot">
+					<svg width="65" height="66" viewBox="0 0 65 66" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M32.4538 1.62289C15.332 1.62289 1.40356 15.6979 1.40356 33C1.40356 50.302 15.332 64.3771 32.4538 64.3771C49.5756 64.3771 63.504 50.302 63.504 33C63.504 15.6979 49.5756 1.62289 32.4538 1.62289ZM47.6142 13.1588L46.4681 12.0357L46.6592 11.3341L47.4582 10.9658L48.5523 11.2991L49.3159 12.2289L47.9966 12.3515L48.9084 13.2463L49.7501 14.2286L50.3058 15.211C50.3058 15.211 51.2605 16.439 51.2605 16.5091C51.2605 16.5791 51.3472 17.1406 51.3472 17.1406L50.1319 16.9648L48.7601 15.9474L48.5689 15.1225L48.6209 14.1577L47.6142 13.1588ZM32.4538 63.2996C28.7488 63.2996 25.2003 62.6123 21.9214 61.3647L20.2602 60.147L17.3291 57.8763L14.1535 55.6055C14.1535 55.6055 13.567 53.8775 13.5183 53.7297C13.4697 53.582 12.7367 52.0511 12.541 51.8039C12.3453 51.5569 10.4711 49.5331 10.4711 49.5331L9.60925 47.361L8.33864 44.7939H5.75027L4.60815 44.2168C3.23354 40.7438 2.46948 36.9615 2.46948 32.9997C2.46948 18.3297 12.8409 6.06479 26.5619 3.29009L24.9623 3.91193V5.31641L26.9509 5.81771H29.6272L31.5132 2.90889L33.7962 5.81771H31.0171L28.8335 6.82071H25.5576L22.5797 7.92443L18.2125 10.8332L19.503 11.435L19.0069 12.2377L15.4335 13.3414L14.9374 16.6517L16.3272 17.0532L18.4114 15.9495L19.7019 14.9465L19.9001 13.9435L22.0837 11.8374L25.7566 11.1351L27.2453 12.3386L29.2306 12.8399L28.7345 14.5452L30.5208 12.7401L27.5429 10.5336L29.6271 10.634L31.017 11.3363L32.0095 13.7438L33.7958 14.5465V12.5402L35.1856 12.4398L36.3766 12.139L37.7665 10.1327L38.6596 10.835L40.8432 10.2332L41.6375 11.3369L43.7223 12.3399V13.3429L40.2483 12.7411L37.1715 12.5408L35.484 13.1426V14.2463L37.0721 15.0484H38.6602L40.6455 15.1489L40.8438 16.6532L38.8584 18.1575L33.201 17.1545L31.7124 17.556L30.918 18.1578L27.5435 16.9543L25.0622 16.0517L24.2679 15.1492L21.29 15.751L17.9154 17.7572H16.0294L13.3492 20.7665L12.5548 22.6723L10.4706 25.3808V30.9978L12.5558 32.9998L14.5412 34.6053L16.3275 35.1066H19.4042L22.68 32.9998L24.7642 33.9037H26.4518L25.9557 37.3138L27.0972 39.0191L28.7348 42.1282L28.0399 43.8335L28.4372 46.7423L29.6281 49.1498L30.5213 51.6572L31.3156 52.8607L32.454 54.3114L33.8566 54.5461L34.6908 53.1617L36.6762 51.3566L37.7684 49.7518L38.9594 46.9435L42.334 46.0409L42.4334 41.327L43.7239 39.6217L46.4042 36.0107L49.0844 34.7066L50.6715 32.9999V30.9949L46.4031 30.7946L45.6094 28.8175L44.319 27.284L42.9291 24.4756L42.1354 22.6705L40.15 19.461H42.036L42.6315 20.464L43.624 23.072L44.6166 25.1781L46.0064 25.5796L46.3041 26.6833L46.6017 28.8186L46.999 29.692H50.0757L52.3587 28.8186H54.6417L55.3367 26.2819L53.1531 23.4735L52.3593 24.2756L50.573 23.3731L48.29 19.8625L49.5805 19.762L51.6647 21.066L52.9551 22.2696L54.2456 23.1721L55.3378 24.4761L56.8265 25.3787L58.1169 26.6827L58.9106 28.388V29.7925L60.2011 30.2938V37.6155L61.0942 37.2141L62.3993 34.5653C61.5894 50.5472 48.4682 63.2995 32.4538 63.2995L32.4538 63.2996Z" fill="#F4F4F6"/>
+						<path d="M43.5654 46.5704L41.9528 48.2984L41.7083 50.5691L42.3437 51.3096L43.7116 50.0756L44.8351 48.9894L46.0569 47.2121L45.715 45.3356L43.5654 46.5704Z" fill="#F4F4F6"/>
+						<path d="M25.5902 12.7514L25.3867 12.0317H24.7001L24.1663 12.263L24.7001 12.5969L25.5902 12.7514Z" fill="#F4F4F6"/>
+						<path d="M24.3186 13.6506L24.8782 14.5759L25.1829 14.0539V13.4712L24.4964 13.1883L24.3186 13.6506Z" fill="#F4F4F6"/>
+						<path d="M27.7262 13.8818L27.4463 14.0537L26.7598 14.1647V14.6529L27.574 14.3532L27.7262 13.8818Z" fill="#F4F4F6"/>
+						<path d="M35.4872 15.6488L34.9117 15.4162L33.926 15.3383V15.8556L35.1678 16.3335L35.4872 15.6488Z" fill="#F4F4F6"/>
+						<path d="M18.1013 8.80524L18.5684 8.22755L17.9722 7.93521L17.3448 8.35799L16.9905 8.78141L16.2173 9.67617L17.4409 9.57823L18.1013 8.80524Z" fill="#F4F4F6"/>
+						<path d="M20.8386 8.16276L20.6935 7.33284V6.48665H20.1623L19.4218 6.69794V8.34179L18.5684 9.367L20.8386 8.16276Z" fill="#F4F4F6"/>
 					</svg>
-				</div>
+				</router-link>
 				<div class="inputContainer">
 					<input id="userInput" v-model="userInput" ref="protectedInput" @keydown="preventDeletion" @keydown.enter="verifWord" type="text" placeholder="Message">
+					<div class="sendBtn" @click="verifWord">
+						<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M20.25 9.20274L2.17 0.162736C1.7 -0.0772636 1.16 -0.0472636 0.71 0.222736C0.27 0.502736 0 0.982736 0 1.50274V7.25274C0 7.95274 0.48 8.55274 1.16 8.71274L8.96 10.5427L1.16 12.3727C0.48 12.5327 0 13.1327 0 13.8327V19.5827C0 20.1027 0.27 20.5827 0.71 20.8627C0.95 21.0127 1.23 21.0827 1.5 21.0827C1.73 21.0827 1.96 21.0327 2.17 20.9227L20.25 11.8827C20.76 11.6327 21.08 11.1127 21.08 10.5427C21.08 9.97274 20.76 9.45274 20.25 9.20274Z" fill="black"/>
+						</svg>
+					</div>
 					<div id="letterTipsContainer">
 						<span class="tips">{{ tips }}</span>{{ userInput.slice(tips.length) }}
 					</div>
@@ -66,9 +77,20 @@ const quiz = {
           actual_JSON: null,
           currentElement: null,
           messages: [],  // Liste pour stocker les messages de l'utilisateur
-          capitalsFound: [] // Liste des capitales trouvées pour ne pas les répéter
+          capitalsFound: [], // Liste des capitales trouvées pour ne pas les répéter
+		  region: null
         };
     },
+	created() {
+		// Récupérer la région depuis les paramètres de route
+		this.region = this.$route.params.region || 'global';
+		
+		// Charger les capitales trouvées spécifiques à cette région
+		const savedCapitalsFound = localStorage.getItem(`capitalsFound_${this.region}`);
+		if (savedCapitalsFound) {
+		  this.capitalsFound = JSON.parse(savedCapitalsFound);
+		}
+	  },
     mounted() {
 		this.loadProgress();
 		this.loadJSON();
@@ -110,37 +132,33 @@ const quiz = {
 		localStorage.setItem('capitalsFound', JSON.stringify(this.capitalsFound));
 		},
 		
-		// Fonction pour charger la progression depuis localStorage
 		loadProgress() {
-		const savedProgression = localStorage.getItem('progression');
-		const savedNameTag = localStorage.getItem('username');
-		const savedCapitalsFound = localStorage.getItem('capitalsFound');
-		
-		if (savedProgression !== null) {
-			this.progression = parseInt(savedProgression, 10);
-		}
-		if (savedNameTag !== null) {
-			this.username = savedNameTag;
-		}
-		if (savedCapitalsFound !== null) {
-			this.capitalsFound = JSON.parse(savedCapitalsFound);
-		}
+			// Charger la progression spécifique à la région
+			const savedProgression = localStorage.getItem(`progression_${this.region}`);
+			if (savedProgression !== null) {
+			  this.progression = parseInt(savedProgression, 10);
+			}
+		},
+		saveProgress() {
+			// Sauvegarder la progression spécifique à la région
+			localStorage.setItem(`progression_${this.region}`, this.progression);
+			localStorage.setItem(`progressionMax_${this.region}`, this.progressionMax);
+			localStorage.setItem(`capitalsFound_${this.region}`, JSON.stringify(this.capitalsFound));
 		},
 
 		async loadJSON() {
 			try {
-				const response = await fetch('data/dataFR.json');
-				if (!response.ok) {
+			  // Charger le JSON correspondant à la région
+			  const jsonFile = `data${this.region.toUpperCase()}.json`;
+			  const response = await fetch(`data/${jsonFile}`);
+			  if (!response.ok) {
 				throw new Error('Erreur lors du chargement du fichier JSON');
-				}
-				this.actual_JSON = await response.json();
-				
-				// Met à jour progressionMax avec le nombre d'éléments dans le JSON
-				this.progressionMax = this.actual_JSON.length;
-
-				this.changeWord();  // Première question à afficher
+			  }
+			  this.actual_JSON = await response.json();
+			  this.progressionMax = this.actual_JSON.length;
+			  this.changeWord();
 			} catch (error) {
-				console.error(error);
+			  console.error(error);
 			}
 		},
 		
@@ -201,6 +219,7 @@ const quiz = {
 			);
 
 			this.messages.push({ text: this.userInput, type: 'reponseHolder' });
+			
 
 			gsap.delayedCall(.5, () => {
 				if (capitalCorrect) {
@@ -226,6 +245,7 @@ const quiz = {
 
 			this.userInput = '';
 			this.tips = '';
+			this.lockedContent = '';
 		},
 		detectHintRequest(response) {
 			const keywords = ['Indice', 'indice'];  // Mots-clés à détecter
@@ -249,7 +269,7 @@ const quiz = {
 			this.currentElement = element;
 
 			this.messages.push({
-				text: `Quelle est la capitale <span class="no-wrap">${this.currentElement.prefix}&nbsp;<span class="word">${this.currentElement.country}</span> ?</span>`,
+				text: `Quelle est la capitale <span class="no-wrap">${this.currentElement.prefix}<span class="word">${this.currentElement.country}</span> ?</span>`,
 				type: 'questionHolder'
 			});
 
@@ -280,6 +300,7 @@ const quiz = {
 		  
 			// Vérifier si une suppression est en cours (backspace ou delete)
 			if (event.key === 'Backspace' || event.key === 'Delete') {
+				
 			  // Si du texte est sélectionné (par exemple avec Ctrl+A ou via une sélection manuelle)
 			  if (selectionStart !== selectionEnd) {
 				// Empêcher la suppression si la sélection commence avant la fin du contenu verrouillé
@@ -310,7 +331,7 @@ const quiz = {
 		showSuccessMessage() {
 			this.messages.push({
 				text: "Félicitations ! Vous avez deviné toutes les capitales.",
-				type: "successMessage"
+				type: "successMessage, questionHolder"
 			});
 		}
 	}

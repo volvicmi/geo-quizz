@@ -30,7 +30,7 @@ const login = {
 			// Enregistrer le pseudo dans le localStorage
 			localStorage.setItem('username', this.username);
 			// Rediriger vers la page quiz
-			this.$router.push('/quiz');
+			this.$router.push('/levels');
 		  }
 		}
 	  }

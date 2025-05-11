@@ -1,0 +1,142 @@
+.pageLevels {
+	background-color: white;
+	
+}
+.levels {
+	
+	header {
+		height: 108px;
+		padding: 20px;
+		justify-content: center;
+		flex-direction: column;
+
+		#return {
+			position: absolute;
+			left: 20px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.title {
+			font-size:28px;
+			font-weight: 700;
+		}
+	}
+
+	.levelsHolder {
+		overflow-y: scroll;
+		margin-top: 108px;
+		max-height: calc(700px - 108px);
+		
+
+		/* Masquer la scrollbar pour IE et Edge */
+		-ms-overflow-style: none; /* Internet Explorer and Edge */
+		
+		/* Masquer la scrollbar pour Firefox */
+		scrollbar-width: none; /* Firefox */
+	  
+		/* Masquer la scrollbar pour Webkit (Chrome, Safari) */
+		&::-webkit-scrollbar {
+		  display: none; /* Chrome, Safari, Webkit */
+		}
+
+		.item {
+			border-bottom: @color-lightgrey 1px solid ;
+			font-size: @font-size-default;
+			list-style: none;
+			
+			&:last-child {
+				border: none;
+			}
+
+			.rooterLinkHolder{
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				color: @text-color;
+				width: 100%;
+				height: 100%;
+				padding: 20px 20px;
+				transition: all .3s ease;
+
+				&:hover{
+					background: #e8e8e8;
+					
+					.imageHolder{
+						transform: scale(1.15);
+					}
+					.launchBtn{
+						
+						transform:translateX(5px) rotate(180deg);
+					}
+				}
+			}
+			.imageHolder{
+				position: relative;
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				overflow: hidden;
+				box-shadow:@box-shadow-default;
+				transition: all .3s ease;
+
+				&::before{
+					position: absolute;
+					content: "";
+					width: 100%;
+					height: 100%;
+					background-color: var(--mainColor);
+					filter: contrast(70%);
+				}
+				img{
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					object-fit: contain;
+					padding: 6px;
+
+					path{
+						fill: var(--mainColor);
+					}
+				}
+			}
+			.textHolder {
+				display: flex;
+				flex-direction: column;
+				margin-left: 15px;
+
+				.title {
+					font-size: 20px;
+				}
+				.score {
+					font-size: 14px;
+				}
+			}
+			.launchBtn {
+				margin-right: 0;
+				margin-left: auto;
+				transform: rotate(180deg);
+				width: 16px;
+  				height: 16px;
+				transition: all .3s ease;
+
+				svg{
+					width: 100%;
+					height: 100%;
+				}
+			}
+			
+		}
+	}
+}
+
+@media (max-width: @tablet) {
+	.levelsHolder {
+		max-height: calc(100vh - 108px);
+	}
+}
+
+@media (max-width: @mobile) {
+	.levelsHolder {
+		max-height: calc(100vh - 108px);
+	}
+}

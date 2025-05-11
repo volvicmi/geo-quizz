@@ -24,7 +24,7 @@
     <div id="app">
 		<div class="screen" ref="screen">
 			<div class="bgHome">
-				<img src="images/homeBg.jpg" alt="geoquiz">
+				<img :src="$root.preloadedImageSrc" alt="géoquiz">
 			</div>
 			<router-view v-slot="{ Component }">
 				<transition :name="transitionName" @before-enter="beforeEnter" @enter="enter" @before-leave="beforeLeave" @leave="leave" >

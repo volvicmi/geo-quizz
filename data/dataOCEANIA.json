@@ -1,0 +1,114 @@
+[
+  {
+    "country": "Australie",
+    "capital": [
+      "Canberra"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Fidji",
+    "capital": [
+      "Suva"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Îles Cook",
+    "capital": [
+      "Avarua"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Îles Marshall",
+    "capital": [
+      "Majuro"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Îles Salomon",
+    "capital": [
+      "Honiara"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Kiribati",
+    "capital": [
+      "Tarawa-Sud"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Micronésie",
+    "capital": [
+      "Palikir"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Nauru",
+    "capital": [
+      "District de Yaren"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Nouvelle-Zélande",
+    "capital": [
+      "Wellington"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Niue",
+    "capital": [
+      "Alofi"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Palaos",
+    "capital": [
+      "Melekeok"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Papouasie-Nouvelle Guinée",
+    "capital": [
+      "Port Moresby"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Samoa",
+    "capital": [
+      "Apia"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Tonga",
+    "capital": [
+      "Nuku’alofa"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Tuvalu",
+    "capital": [
+      "Funafuti"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Vanuatu",
+    "capital": [
+      "Port-Vila"
+    ],
+    "prefix": "de "
+  }
+]

@@ -1,0 +1,353 @@
+[
+  {
+    "country": "Afghanistan",
+    "capital": [
+      "Kaboul"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Arabie Saoudite",
+    "capital": [
+      "Riyad"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Arménie",
+    "capital": [
+      "Erevan"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Azerbaïdjan",
+    "capital": [
+      "Bakou"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Bahreïn",
+    "capital": [
+      "Manama"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Bangladesh",
+    "capital": [
+      "Dacca"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Bhoutan",
+    "capital": [
+      "Thimphou"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Brunéi Darussalam",
+    "capital": [
+      "Bandar Seri Begawan"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Cambodge",
+    "capital": [
+      "Phnom Penh"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Chine",
+    "capital": [
+      "Pékin"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Corée du Nord",
+    "capital": [
+      "Pyongyang"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Corée du Sud",
+    "capital": [
+      "Séoul"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Émirats Arabes Unis",
+    "capital": [
+      "Abu Dhabi"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Géorgie",
+    "capital": [
+      "Tbilissi"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Hong Kong",
+    "capital": [
+      "Hong Kong"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Inde",
+    "capital": [
+      "New Delhi"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Indonésie",
+    "capital": [
+      "Jakarta"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Irak",
+    "capital": [
+      "Bagdad"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Iran",
+    "capital": [
+      "Téhéran"
+    ],
+    "prefix": "de l'"
+  },
+  {
+    "country": "Israël",
+    "capital": [
+      "Jérusalem"
+    ],
+    "prefix": "d'"
+  },
+  {
+    "country": "Japon",
+    "capital": [
+      "Tokyo"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Jordanie",
+    "capital": [
+      "Amman"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Kazakhstan",
+    "capital": [
+      "Astana"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Kirghizistan",
+    "capital": [
+      "Bichkek"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Koweït",
+    "capital": [
+      "Koweït"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Laos",
+    "capital": [
+      "Vientiane"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Liban",
+    "capital": [
+      "Beyrouth"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Malaisie",
+    "capital": [
+      "Kuala Lumpur"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Maldives",
+    "capital": [
+      "Malé"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Mongolie",
+    "capital": [
+      "Oulan-Bator"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Myanmar",
+    "capital": [
+      "Nay Pyi Taw"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Népal",
+    "capital": [
+      "Katmandou"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Oman",
+    "capital": [
+      "Mascate"
+    ],
+    "prefix": "d'"
+  },
+  {
+    "country": "Ouzbékistan",
+    "capital": [
+      "Tachkent"
+    ],
+    "prefix": "d'"
+  },
+  {
+    "country": "Pakistan",
+    "capital": [
+      "Islamabad"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Palestine",
+    "capital": [
+      "Jérusalem-Est",
+      "Ramallah"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Philippines",
+    "capital": [
+      "Manille"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Qatar",
+    "capital": [
+      "Doha"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Russie",
+    "capital": [
+      "Moscou"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Singapour",
+    "capital": [
+      "Singapour"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Sri Lanka",
+    "capital": [
+      "Sri Jayawardenapura Kotte"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Syrie",
+    "capital": [
+      "Damas"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Tadjikistan",
+    "capital": [
+      "Douchanbé"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Taïwan",
+    "capital": [
+      "Taipei"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Thaïlande",
+    "capital": [
+      "Bangkok"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Timor Oriental",
+    "capital": [
+      "Dili"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Turkménistan",
+    "capital": [
+      "Achgabat"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Turquie",
+    "capital": [
+      "Ankara"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Vietnam",
+    "capital": [
+      "Hanoï"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Yémen",
+    "capital": [
+      "Sanaa"
+    ],
+    "prefix": "du "
+  }
+]

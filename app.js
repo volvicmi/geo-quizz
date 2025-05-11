@@ -4,7 +4,12 @@ const routes = [
 	{ path: '/login', component: login, name: 'login' },
 	{ path: '/levels', component: levels, name: 'levels' },
 	{ path: '/list', component: list, name: 'list' },
-	{ path: '/quiz', component: quiz, name: 'quiz' },
+	{ 
+		path: '/quiz/:region?', 
+		component: quiz, 
+		name: 'quiz',
+		props: true
+	},
 	{ path: '/:pathMatch(.*)*', component: { template: '<div>Page non trouvée</div>' } }, // Route fallback
 ];
 
@@ -21,13 +26,13 @@ router.beforeEach((to, from, next) => {
 	// Si un pseudo est déjà défini et que l'utilisateur essaie d'accéder à /login
 	if (username && to.path === '/login') {
 	  // Rediriger directement vers /quiz
-	  next('/quiz');
-	} 
-	// Si aucun pseudo n'est défini et qu'il essaie d'accéder au /quiz
-	else if (!username && to.path === '/quiz') {
+	  next('/levels');
+	}
+	// Si aucun pseudo n'est défini et qu'il essaie d'accéder au /levels
+	else if (!username && to.path === '/levels') {
 	  // Rediriger vers la page de login
 	  next('/login');
-	} 
+	}
 	// Dans tous les autres cas, continuer vers la page demandée
 	else {
 	  next();
@@ -41,10 +46,11 @@ const app = Vue.createApp({});
 app.mixin({
 	data() {
 		return {
-			transitionName: 'fade', // Transition par défaut
+			transitionName: 'slideDefault', // Transition par défaut
 			activeColor: "#aed7e5", // La couleur active (par défaut)
-			color: ['#040404', '#fbc1cc','#3B80F5', '#aed7e5'], // Les couleurs disponibles
+			color: ['#D2E0FB', '#664343','#185519', '#821131', '#7CF5FF', '#604CC3', '#FF6600', '#1230AE'], // Les couleurs disponibles
 			username: '', // Nom de l'utilisateur
+			preloadedImageSrc: '', // Stocke l'image préchargée
 		};
 		},
 	watch: {
@@ -57,17 +63,16 @@ app.mixin({
 				this.transitionName = 'slide';
 			}
 		} else if (from.name === 'login') {
-			this.transitionName = 'slideInverse';
+			this.transitionName = 'slide';
 		} else {
-			this.transitionName = 'fade';
+			this.transitionName = 'slideDefault';
 		}
 	},
 	},
 	methods: {
 		// Ajouter la route /home dans l'historique
 		btnReturn() {
-			this.$router.push('/');
-			// this.$router.back();
+			this.$router.back();
 		},
 		setAppHeight() {
 			if (this.$refs.screen) {
@@ -102,6 +107,7 @@ app.mixin({
 			this.setThemeColor(this.activeColor);
 			}
 		},
+
 		// Animation
 		beforeEnter(el) {
 			console.log(this.transitionName);
@@ -109,7 +115,6 @@ app.mixin({
 				// Slide beforeEnter
 				gsap.set(el, {
 					top: '100%',
-					
 					position: "absolute",
 					transformOrigin:"bottom",
 					zIndex: 2
@@ -139,9 +144,10 @@ app.mixin({
 			} else {
 				// Animation par défaut
 				gsap.set(el, { 
-					transformOrigin:"50% 50%" ,
-					scale:0,
-					opacity: 0 
+					top: '100%',
+					position: "absolute",
+					transformOrigin:"bottom",
+					zIndex: 2
 				});
 			}
 		},
@@ -205,10 +211,10 @@ app.mixin({
 			  	} else {
 					// Animation par défaut
 					gsap.to(el, { 
+						top:0,
 						scale:1,
-						opacity: 1,
-						duration: 0.5,
-						onComplete: done
+						duration: .5,
+						ease: "power2.inOut",
 					});
 			  	}
 		},
@@ -273,13 +279,13 @@ app.mixin({
 				}
 		  	} else {
 				// Animation par défaut
-				gsap.to(el, { 
-					transformOrigin:"50% 50%" ,
-					scale:1.2,
-					opacity: 0,
+				gsap.to(el, {
+					top:'-100%',
 					duration: 0.5,
+					ease: "power2.inOut",
 					onComplete: done
 				});
+				
 		  	}
 		}
 	},
@@ -288,6 +294,13 @@ app.mixin({
 		this.initTheme();
 		this.setAppHeight();
 		window.addEventListener('resize', this.setAppHeight);
+
+		 // Précharge l'image dès le montage de l'application
+		 const img = new Image();
+		 img.src = 'images/worldBgApple.jpg'; // URL de l'image à précharger
+		 img.onload = () => {
+		   this.preloadedImageSrc = img.src; // Stocke l'URL une fois chargée
+		 };
 	});
 	}
 });

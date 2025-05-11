@@ -5,18 +5,18 @@
     flex-grow: 1;
 	
     .bgColorSwitch{
-        position: absolute;
+		position: absolute;
         top: 0;
         left: 0;
-        width: 100%;
         height: 100%;
+        width: 100%;
         background:@mainColor;
 		filter: grayscale(40%);
     }
     img{
         position: absolute;
-        // object-fit: none;
         object-fit: cover;
+        // object-fit: none;
         top: 0;
         left: 0;
         width: 100%;
@@ -130,7 +130,13 @@
 }
 
 
-
+.measure-span {
+	visibility: hidden;
+	position: absolute;
+	white-space: pre;
+	font-family: inherit;
+	font-size: inherit;
+  }
 
 @media (max-width: @tablet) {
 	.messageContainer{

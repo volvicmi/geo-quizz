@@ -1,0 +1,163 @@
+[
+  {
+    "country": "Antigua et Barbuda",
+    "capital": [
+      "Saint John’s"
+    ],
+    "prefix": "d'"
+  },
+  {
+    "country": "Bahamas",
+    "capital": [
+      "Nassau"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Barbade",
+    "capital": [
+      "Bridgetown"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Belize",
+    "capital": [
+      "Belmopan"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Canada",
+    "capital": [
+      "Ottawa"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Costa Rica",
+    "capital": [
+      "San José"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Cuba",
+    "capital": [
+      "La Havane"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Dominique",
+    "capital": [
+      "Roseau"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "États-Unis",
+    "capital": [
+      "Washington"
+    ],
+    "prefix": "des "
+  },
+  {
+    "country": "Grenade",
+    "capital": [
+      "Saint-Georges"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Guatemala",
+    "capital": [
+      "Guatemala"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Haïti",
+    "capital": [
+      "Port-au-Prince"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Honduras",
+    "capital": [
+      "Tegucigalpa"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Jamaïque",
+    "capital": [
+      "Kingston"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Mexique",
+    "capital": [
+      "Mexico"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Nicaragua",
+    "capital": [
+      "Managua"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Panama",
+    "capital": [
+      "Panamá"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "République Dominicaine",
+    "capital": [
+      "Santo Domingo"
+    ],
+    "prefix": "de la "
+  },
+  {
+    "country": "Saint-Christophe-et-Niévès",
+    "capital": [
+      "Basseterre"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Sainte-Lucie",
+    "capital": [
+      "Castries"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Saint-Vincent-et-les Grenadines",
+    "capital": [
+      "Kingstown"
+    ],
+    "prefix": "de "
+  },
+  {
+    "country": "Salvador",
+    "capital": [
+      "San Salvador"
+    ],
+    "prefix": "du "
+  },
+  {
+    "country": "Trinidad et Tobago",
+    "capital": [
+      "Port-d’Espagne"
+    ],
+    "prefix": "de "
+  }
+]
